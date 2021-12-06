@@ -5,6 +5,10 @@ import pyautogui, colorsys, sys, math, threading, os, time, pyperclip
 from pynput import keyboard, mouse
 from subprocess import Popen
 
+
+
+## So You Will Obviously Have To Change The Directories...
+
 width = 550
 height = 250
 configs = [

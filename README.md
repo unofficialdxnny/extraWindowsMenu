@@ -5,4 +5,4 @@ You def need to change some of the file paths and programs in main.py
 
 Add your changes to main.py
 
-Run start.bat`
+Run `start.bat`

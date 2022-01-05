@@ -205,3 +205,6 @@ while True:
     dur = 0.0166666667
     if dur > 0:
         time.sleep(dur)
+	
+	
+	## Code by ganer  

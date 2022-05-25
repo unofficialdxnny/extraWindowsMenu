@@ -7,25 +7,28 @@ from subprocess import Popen
 
 
 
-## So You Will Obviously Have To Change The Directories...
+
 
 width = 550
 height = 250
 configs = [
-    ["files.png", "C:/Windows/explorer.exe"],
+    ["files.png", ""],
     ["camera.png", ["start", "microsoft.windows.camera:"]],
-    ["steam.png", "C:/Program Files (x86)/Steam/steam.exe"],
-    ["vsc.png", "C:/Users/danial/Desktop/Visual Studio Code.lnk"],
-      ["cmd.png", "C:/Users/danial/Desktop/Elevate-Music"],
+    ["steam.png", ""],
+    ["vsc.png", ""],
+      ["cmd.png", ""],
+      [".png", ""],
+      [".png", ""],
+      [".png", ""],
 
 ]
 
-class cmd:
-    def __init__(self, x, y, img, cmd):
+class :
+    def __init__(self, x, y, img, ):
         self.x   = x
         self.y   = y
         self.img = img
-        self.cmd = cmd
+        self. = 
 
 root = Tk()
 root.overrideredirect(True)
@@ -48,7 +51,7 @@ for o in range(-1, 2):
     for i in range(-3, 4):
         if t < len(configs):
             cord = [centerX - 30 + i * 75, centerY - 30 + o * 75, centerX + 30 + i * 75, centerY + 30 + o * 75]
-            cc = cmd(cord[0], cord[1], f"icons/{configs[t][0]}", configs[t][1])
+            cc = (cord[0], cord[1], f"icons/{configs[t][0]}", configs[t][1])
             RI.append(Image.open(cc.img))
             iWidth, iHeight = RI[-1].size
             r = iHeight / iWidth
@@ -96,9 +99,9 @@ def on_click(x, y, button, pressed):
             alternate = True
             can = True
         if can and currentSelection != None:
-            command = icons[currentSelection][-1].cmd
+            command = icons[currentSelection][-1].
             if type(command ) == str:
-                Popen([icons[currentSelection][-1].cmd], shell = True)
+                Popen([icons[currentSelection][-1].], shell = True)
             else:
                 Popen(command, shell = True)
             if not alternate:
